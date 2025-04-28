@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'MonumentExt';
+    src: url('MonumentExtended-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MonumentExt';
+    src: url('MonumentExtended-Ultrabold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+
+    scroll-behavior: smooth;
+}
+
+.pink {
+    color: #fc1287;
+}
+
+.font-alt {
+    font-family: "MonumentExt", sans-serif;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-video {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    object-position: center;
+}
+
+.container {
+    max-width: 90vw;
+    overflow-x: hidden;
+    margin: auto;
+}
+
+
+.about {
+    display: flex;
+    padding: 100px 0;
+}
+
+.about h1 {
+    flex: 1;
+    font-size: 50px;
+    font-weight: bolder;
+    color: #181818;
+}
+
+.about p {
+    flex: 1;
+    max-width: 800px;
+    font-size: 32px;
+    text-align: right;
+}
+
+.services {
+    position: relative;
+}
+
+.service-content {
+    padding: 60px 20px 20px 20px;
+    border: 1px solid pink;
+    margin: 20px 0;
+}
+
+.service-content h1 {
+    font-size: 28px;
+    font-family: "MonumentExt", sans-serif;
+    font-weight: 400;
+}
+
+.service-content p {
+    font-size: 16px;
+}
+
+.services button {
+    position: absolute;
+    right: 0;
+
+    background-color: #fc1287;
+    border: none;
+    color: white;
+    font-family: "MonumentExt", sans-serif;
+    font-size: 24px;
+    padding: 10px 100px;
+
+    margin-bottom: 50px;
+    transition: .3s;
+}
+
+button:hover{
+    background-color: #c01068;
+}
+
+.services-txt {
+    padding: 100px 0;
+    font-size: 24px;
+}
+
+.portf {
+    text-align: center;
+}
+
+.portf h1 {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.portf p {
+    font-size: 32px;
+    margin: 30px 0;
+}
+
+.portf-img {
+    max-width: 1500px;
+    width: 80%;
+}
