@@ -27,6 +27,8 @@ html {
     font-weight: 500;
 
     scroll-behavior: smooth;
+
+    background-color: rgb(255, 250, 255);
 }
 
 .pink {
@@ -81,8 +83,19 @@ html {
 
 .service-content {
     padding: 60px 20px 20px 20px;
-    border: 1px solid pink;
+    border-bottom: 3px solid #fc1287;
     margin: 20px 0;
+    
+    height: 10px;
+    overflow: hidden;
+    transition: .5s ease-in-out;
+}
+
+.service-content:hover{
+    padding: 120px 20px 20px 20px;
+    height: auto;
+    background-color: #fc1287;
+    color: white;
 }
 
 .service-content h1 {
