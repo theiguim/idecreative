@@ -2,14 +2,14 @@
 
 @font-face {
     font-family: 'MonumentExt';
-    src: url('MonumentExtended-Regular.otf') format('opentype');
+    src: url('fonts/MonumentExtended-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'MonumentExt';
-    src: url('MonumentExtended-Ultrabold.otf') format('opentype');
+    src: url('fonts/MonumentExtended-Ultrabold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
 }
@@ -28,7 +28,7 @@ html {
 
     scroll-behavior: smooth;
 
-    background-color: rgb(255, 250, 255);
+    background-color: #fffaff;
 }
 
 .pink {
@@ -39,9 +39,39 @@ html {
     font-family: "MonumentExt", sans-serif;
 }
 
+.reveal-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+.top-half,
+.bottom-half {
+    width: 100vw;
+    height: 50vh;
+    background: #fc1287;
+    position: absolute;
+    left: 0;
+    z-index: 1001;
+}
+
+.top-half {
+    top: 0;
+}
+
+.bottom-half {
+    bottom: 0;
+}
+
 .main {
     width: 100vw;
     height: 100vh;
+    position: relative;
+    z-index: 1;
 }
 
 .main-video {
@@ -85,13 +115,40 @@ html {
     padding: 60px 20px 20px 20px;
     border-bottom: 3px solid #fc1287;
     margin: 20px 0;
-    
+
     height: 10px;
     overflow: hidden;
     transition: .5s ease-in-out;
+
+    position: relative;
 }
 
-.service-content:hover{
+.arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #fc1287;
+    font-size: 26px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    transform: rotate(-30deg);
+    transition: .5s ease-in-out;
+}
+
+.service-content:hover .arrow {
+    background-color: #fffaff;
+    color: black;
+    transform: rotate(90deg);
+    padding-bottom: 3px;
+}
+
+.service-content:hover {
     padding: 120px 20px 20px 20px;
     height: auto;
     background-color: #fc1287;
@@ -121,9 +178,10 @@ html {
 
     margin-bottom: 50px;
     transition: .3s;
+    cursor: pointer;
 }
 
-button:hover{
+button:hover {
     background-color: #c01068;
 }
 
@@ -149,4 +207,110 @@ button:hover{
 .portf-img {
     max-width: 1500px;
     width: 80%;
+}
+
+
+.works {
+    margin-top: 100px;
+    width: 100vw;
+    height: auto;
+    position: relative;
+}
+
+.work-content {
+    height: 60vh;
+    width: 100vw;
+    gap: 10px;
+    margin-bottom: 10px;
+    display: flex;
+
+    position: sticky;
+    top: 0;
+}
+
+.work-element {
+    height: 100%;
+    flex: 1;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: background-size 0.3s ease;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    cursor: pointer;
+}
+
+.work-element p {
+    font-family: "MonumentExt", sans-serif;
+    font-size: 24px;
+    color: #fffaff;
+    padding: 15px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.171);
+    transition: 0.3s ease;
+}
+
+.arrow-work {
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    background-color: #fffaff;
+    color: black;
+    padding-bottom: 3px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    opacity: 0;
+
+    transition: .3s ease;
+}
+
+.work-element:hover {
+    background-size: 110% 110%;
+}
+
+.work-element:hover p {
+    background-color: rgba(0, 0, 0, 0.281);
+}
+
+.work-element:hover .arrow-work {
+    opacity: 1;
+    transform: rotate(-45deg);
+}
+
+
+.footer {
+    width: 100vw;
+    height: 45vh;
+    min-height: 400px;
+    background-color: #fc1287;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.nav-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-footer a {
+    font-family: "MonumentExt", sans-serif;
+    font-size: 67px;
+    color: #181818;
+    text-decoration: none;
+
+    display: inline-block;
+    overflow: hidden;
+}
+
+.nav-footer a .letter {
+    display: inline-block;
+    transition: transform 0.3s, opacity 0.3s;
 }
