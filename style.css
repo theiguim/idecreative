@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
+/* #fc1287 */
 @font-face {
     font-family: 'MonumentExt';
     src: url('fonts/MonumentExtended-Regular.otf') format('opentype');
@@ -32,7 +32,7 @@ html {
 }
 
 .pink {
-    color: #fc1287;
+    color: #6734ff;
 }
 
 .font-alt {
@@ -53,7 +53,7 @@ html {
 .bottom-half {
     width: 100vw;
     height: 50vh;
-    background: #fc1287;
+    background: #6734ff;
     position: absolute;
     left: 0;
     z-index: 1001;
@@ -113,7 +113,7 @@ html {
 
 .service-content {
     padding: 60px 20px 20px 20px;
-    border-bottom: 3px solid #fc1287;
+    border-bottom: 3px solid #6734ff;
     margin: 20px 0;
 
     height: 10px;
@@ -127,7 +127,7 @@ html {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: #fc1287;
+    background-color: #6734ff;
     font-size: 26px;
     width: 60px;
     height: 60px;
@@ -151,7 +151,7 @@ html {
 .service-content:hover {
     padding: 120px 20px 20px 20px;
     height: auto;
-    background-color: #fc1287;
+    background-color: #6734ff;
     color: white;
 }
 
@@ -169,7 +169,7 @@ html {
     position: absolute;
     right: 0;
 
-    background-color: #fc1287;
+    background-color: #6734ff;
     border: none;
     color: white;
     font-family: "MonumentExt", sans-serif;
@@ -182,7 +182,7 @@ html {
 }
 
 button:hover {
-    background-color: #c01068;
+    background-color: #6734ff;
 }
 
 .services-txt {
@@ -286,7 +286,7 @@ button:hover {
     width: 100vw;
     height: 45vh;
     min-height: 400px;
-    background-color: #fc1287;
+    background-color: #6734ff;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -357,7 +357,7 @@ button:hover {
     margin: 10px 0;
     color:#fffaff;
     height: auto;
-    background-color: #fc1287;
+    background-color: #6734ff;
 }
 
 .arrow {
