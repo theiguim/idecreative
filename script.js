@@ -1,4 +1,15 @@
+window.addEventListener("resize", () => {
+    ScrollTrigger.refresh();
+  });
+  
+  ScrollTrigger.addEventListener("refreshInit", () => {
+    window.scrollTo(0, 0);
+  });
+  
+
 window.addEventListener('load', () => {
+
+
 
 
     document.querySelectorAll('.nav-footer a').forEach(link => {
@@ -46,5 +57,7 @@ window.addEventListener('load', () => {
         yPercent: 100,
         ease: "power4.out"
     }, 0);
+
+  
 
 });

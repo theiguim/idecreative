@@ -314,3 +314,127 @@ button:hover {
     display: inline-block;
     transition: transform 0.3s, opacity 0.3s;
 }
+
+
+/* quebroiu mobile 810 */
+
+@media(max-width: 985px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .about p {
+        text-align: center;
+        font-size: 19px;
+    }
+}
+
+@media(max-width: 800px) {
+
+    .about{
+        padding: 20px 0;
+    }
+
+    .about h1 {
+        font-size: 16px;
+    }
+
+    .font-alt {
+        font-size: 22px;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+
+    
+.service-content {
+    padding: 10px;
+    border-bottom: none;
+    margin: 10px 0;
+    color:#fffaff;
+    height: auto;
+    background-color: #fc1287;
+}
+
+.arrow {
+    display: none;
+}
+
+.service-content:hover {
+    padding: 10px;
+    color:#fffaff;
+}
+
+.service-content h1 {
+    font-size: 18px;
+}
+
+.service-content p {
+    font-size: 14px;
+}
+
+.services button {
+    position: static;
+    color:#fffaff ;
+    font-size: 18px;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.services-txt {
+    padding: 20px 0;
+    font-size: 16px;
+}
+
+.portf h1 {
+    font-size: 32px;
+}
+
+.portf p {
+    font-size: 16px;
+    margin: 15px;
+}
+
+.portf-img {
+    width: 100%;
+}
+
+.works {
+    margin-top: 10px;
+}
+
+.work-content {
+    width: 100vw;
+    gap: 5px;
+    margin-bottom: 5px;
+    flex-direction: column;
+}
+
+.work-element {
+    background-size: cover;
+}
+
+.work-element:hover {
+    background-size: cover;
+}
+
+.footer {
+    height: auto;
+    min-height: 40vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    gap: 50px;
+}
+
+.nav-footer a {
+    font-size: 38px;
+}
+
+}
